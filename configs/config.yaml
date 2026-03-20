@@ -1,0 +1,20 @@
+device: auto
+
+training:
+  epochs: 50
+  batch_size: 1
+  learning_rate: 0.0001
+  save_every_epoch: true
+
+model:
+  name: simple_cnn
+  num_classes: 10
+
+data:
+  image_size: 224
+  num_workers: 0
+
+checkpoint:
+  dir: checkpoints
+  last: last.pt
+  best: best.pt
